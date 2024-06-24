@@ -1,5 +1,5 @@
 # Practice-Makes-Perfect
 Lessons for front end development
 
-Date                    Lessons Name                  Remarks
-June 21            Online Course Website
+Date                    Project Name                  Remarks
+June 23                  To Do List 1
