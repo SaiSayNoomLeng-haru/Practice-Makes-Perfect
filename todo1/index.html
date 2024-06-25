@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo 1</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+ES:wght@100..400&family=Playwrite+MX:wght@100..400&display=swap" rel="stylesheet">
+    <!-- end font -->
+    <!-- fontawsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- end fontawesome -->
+</head>
+<body>
+    <main id="main">
+        <!-- add task -->
+         <div id="add-task">
+            <h1>Todo List <span>by sai sai &#9825 haru</span></h1>
+            <div id="task">
+                <form id="add-form">
+                    <input type="text" id="list" name="list" placeholder="Add a task">
+                    <input type="date" id="list-date" name="list-date">
+                    <input type="time" id="list-time" name="list-time">
+                    <button type="button" id="list-btn">Add</button>
+                </form>
+            </div>
+            <div id="setting">
+                <div id="color-picker">
+                    <select name="colors" id="colors">
+                        <option value="default">Default Color</option>
+                        <option value="brown">Brown</option>
+                        <option value="purple">Purple</option>
+                        <option value="night">Night</option>
+                    </select>
+                </div>
+                <div id="font-picker">
+                    <select name="fonts" id="fonts">
+                        <option value="default">Default font</option>
+                        <option value="es">Playwrite ES</option>
+                        <option value="mx">Playwrite MX</option>
+                    </select>
+                </div>
+            </div>
+         </div>
+         <!-- end add task -->
+        <!-- tasks list -->
+         <div id="current-task">
+            <h3>Current Tasks</h3>
+         </div>
+        <!-- end task list -->
+
+        <!-- completed list -->
+         <div id="completed-task">
+            <h3>Completed Tasks</h3>
+            <ul id="completed-task-list-menu">
+                <!-- <li class="completed-task-lists">take a shower  <i class="fa-solid fa-recycle" style="color: #ffffff;"></i></li> -->
+            </ul>
+         </div>
+         <!-- end completed list -->
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
