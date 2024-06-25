@@ -1,0 +1,180 @@
+:root{
+    --font1 : 'Playwrite ES', sans-serif;
+    --font2 : "Playwrite MX", sans-serif;
+    --color-default : rgb(72, 73, 133);
+    --color-default-shade : #1e1f38;
+    --color-brown: #8f372b;
+    --color-brown-shade: #421914;
+    --color-purple: #7e1f8f;
+    --color-purple-shade: #3b0f42;
+    --color-night: rgb(0, 0, 0);
+    --color-pink-shade: #a83981;
+    --color-neon: white;
+    --text-shadow: 0 0 3px #fff, 0 0 10px #0fa, 0 0 50px #0fa;
+
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    color: white;
+    background-color: var(--color-default) ;
+}
+#add-task h1{
+    font-family: var(--font1);
+    text-align: center;
+    font-size: 30px;
+    margin-top: 20px;
+}
+#add-task h1 span{
+    font-size: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+#task{
+    width: 50vw;
+    margin: auto;
+    margin-top: 20px;
+}
+#setting select{
+    background-color: transparent;
+    color: white;
+    width: 150px;
+    border-radius: 10px;
+    padding: 5px;
+    margin-top: 10px;
+}
+#setting select option{
+    color: white;
+    background-color: var(--color-default-shade);
+}
+#add-form{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    font-family: var(--font2);
+    gap: 10px;
+}
+#setting{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+#list, #list-date, #list-time, #list-btn, #current-task, #completed-task, #setting{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#list{
+    background-image: url(img/plus-solid.svg);
+    background-position: 10px 8px;
+    background-repeat: no-repeat;
+    background-size: 10px;
+    background-color: transparent;
+    width: 400px;
+    border: 1px solid white;
+    height: 30px;
+    padding-left: 30px;
+    outline: none;
+    color: white;
+    border-radius: 10px;
+   
+}
+#list-date, #list-time, #list-btn{
+    background-color: transparent;
+    border: 1px solid white;
+    height: 30px;
+    color: white;
+    border-radius: 10px;
+    padding: 5px;
+    outline: none;
+    width: 100px;
+}
+#list-btn{
+    font-size: 10px;
+}
+#list-btn:hover{
+    background-color: var(--color-default-shade) ;
+    cursor: pointer;
+}
+#list-btn:active{
+    transform: translateY(1px);
+    box-shadow: 1px 1px 5px var(--color-default-shade);
+    transition: 0.5;
+}
+#current-task, #completed-task{
+    width: 50vw;
+    height: 300px;
+    margin: auto;
+    margin-top: 30px;
+    border: 1px solid white;
+    border-radius: 10px;
+    overflow: auto;
+}
+#current-task h3, #completed-task h3{
+    text-align: center;
+    margin: 10px 0;
+}
+.tasks{
+    border-bottom: 1px solid white;
+    width: 80%;
+    margin: auto;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.label-task{
+    cursor: pointer;
+    vertical-align: middle;
+}
+.deleteBtn{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.deleteBtn:active{
+    transform: translateY(2px);
+}
+#completed-task-list-menu{
+   list-style-type: square;
+}
+.completed-task-lists{
+    width: 50%;
+    margin: left;
+    text-decoration: line-through;
+}
+.recycle-btn{
+    cursor: pointer;
+}
+
+@media screen and (max-width: 430px) {
+    #add-form{
+        flex-flow: row wrap;
+        gap: 10px;
+    }
+    #setting{
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    #list-btn{
+        width: 100%;
+    }
+    .tasks{
+        border-bottom: 1px solid white;
+        width: 80%;
+        height: 35px;
+        font-size: 10px;
+        margin: auto;
+        height: 60px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 10px;
+    }
+   
+}
