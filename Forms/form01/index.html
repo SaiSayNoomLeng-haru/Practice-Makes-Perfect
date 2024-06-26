@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form 01</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+     <!-- end font -->
+</head>
+<body>
+    <!-- main -->
+     <div class="container" id="main">
+        <div id="header">
+            <h1><span id="sign-up" class="active">Sing Up</span> / <span id="sign-in">Sign In</span></h1>
+        </div>
+        <form action="index.html" id="form">
+            <div id="names-input">
+                <input type="text" id="first-name" name="first-name" placeholder="First Name" required autofocus>
+                <input type="text" id="last-name" name="last-name" placeholder="Last Name"required>
+            </div>  
+            <input type="email" id="email1" placeholder="Email Address" required>
+            <input type="email" id="email2" placeholder="Re-enter Email Address"  required>
+            <input type="password" id="password1" name="password" placeholder="Password" required>
+            <input type="password" id="password2" name="password" placeholder="Re-enter Password" required>
+            <div id="message-container">
+                <p id="message"></p>
+            </div>
+            <div class="checkbox">
+                <input type="checkbox" id="checkbox" name="checkbox">
+                <label for="checkbox">I agree to the <a href="#">terms of use</a></label>
+            </div>
+            <input type="submit" value="Sign Up" id="submit" class="submit" disabled>
+        </form>
+     </div>
+     <!-- end main -->
+
+
+
+
+    <script src="main.js"></script>
+</body>
+</html>
