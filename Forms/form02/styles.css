@@ -1,4 +1,161 @@
 :root{
     --font1: "Playwrite DE Grund", cursive;
     --font2: "Ubuntu", sans-serif;
+    --color1 : #f26a1b;
+    --color2 : #260101;
+    --color3 : #d58b8b;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: var(--color2);
+}
+.container{
+    width: 80vw;
+    height: 100vh;
+    padding: 10px 10px 10px 40px;
+    overflow: hidden;
+    margin: auto;
+    display: flex;
+}
+
+#image-container img{
+   width: 400px;
+   height: 800px;
+}
+#form-container{
+    background-color: var(--color2);
+    height: 100vh;
+    flex: 70%;
+    height: 800px;
+    padding-left: 50px;
+    color: white;
+    font-family: var(--font2);
+}
+#navbar ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 20px;
+}
+#navbar ul li a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    width: 100px;
+    padding: 10px;
+    margin: 20px 0;
+    text-align: center;
+    border: 0.2px solid gray;
+}
+#sign-up{
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+#sign-in{
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+.toggle{
+    background-color: var(--color1);
+    transition: 0.3s linear;
+}
+#form-header{
+    margin-top: 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+#form-header h1, #form-header p{
+    opacity: 0.2;
+}
+#form-header h1{
+    cursor: pointer;
+    margin: 20px;
+}
+.form-header-toggle{
+    opacity: 1!important;
+    border-bottom: 2px solid var(--color1);
+    transition: 0.3s linear;
+    
+}
+#form02{
+    display: flex;
+    flex-flow: column nowrap;
+    width: 80%;
+    margin: 30px 0;
+    gap: 10px;
+}
+#form02 label:not(:last-child){
+    text-transform: uppercase;
+    letter-spacing: -1px;
+}
+#form02 input:not([type = "submit"]){
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid gray;
+    height: 30px;
+    outline: none;
+    color: white;
+}
+#checkbox-container input, #checkbox-container label{
+    height: 10px!important;
+    
+}
+#checkbox-container label a{
+    text-decoration: none;
+    color: white;
+    border-bottom: 1px solid var(--color1);
+}
+#checkbox{
+    width: 30px;
+}
+#checkbox-container label{
+    color: rgba(255, 255, 255, 0.3);
+}
+#message-container{
+    width: 100px;
+    height: 50px;
+}
+#error-message{
+    color: red;
+}
+#submit{
+    width: 100px;
+    background-color: var(--color1);
+    border: none;
+    padding: 10px;
+    border-radius: 30px;
+    color: white;
+    margin-top: 40px;
+    cursor: pointer;
+}
+#submit:disabled{
+    background-color: gray;
+}
+#have-account{
+    text-decoration: underline;
+    color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+}
+#have-account:hover{
+    color: red;
+    transition: 0.5s linear;
+}
+/* validate toggle */
+.border-red{
+    border-bottom: 3px solid red!important;
+    animation: shake 0.5s;
+}
+@keyframes shake {
+    0%{transform: translateY(0px);}
+    25%{transform: translateY(-5px);}
+    50%{transform: translateY(5px);}
+    75%{transform: translateY(-5px);}
+    100%{transform: translateY(0px);}
 }
