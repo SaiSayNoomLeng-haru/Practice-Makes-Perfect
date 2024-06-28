@@ -103,6 +103,16 @@ body{
     outline: none;
     color: white;
 }
+#form02 label{
+    position: relative;
+}
+#form02 label:not(:last-child)::after{
+    content: ' *';
+    color: red;
+    font-size: 10px;
+    position: absolute;
+    top: 0%;
+}
 #checkbox-container input, #checkbox-container label{
     height: 10px!important;
     
