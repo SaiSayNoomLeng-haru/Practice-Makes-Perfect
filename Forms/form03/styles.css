@@ -1,0 +1,145 @@
+/* root and body */
+:root{
+    --font1 : "Noto Sans", sans-serif;
+    --font2 : "Raleway", sans-serif;
+    --color1 : #fe4553;
+    --color2 : #fe4978;
+    --color3 : #fff;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+/* main */
+#main{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 70vw;
+    height: 80vh;
+    margin: auto;
+    margin-top: 50px;
+    box-shadow: -10px 10px 50px black;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+/* sign in side */
+#description, #right{
+    font-family: var(--font1);
+    text-align: center;
+}
+#description h1, #right h1{
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: -3px;
+    margin: 20px;
+}
+#sign-in-left, #sign-up-right{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    font-family: var(--font2);
+}
+#description a i{
+    font-size: 20px;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    padding: 15px;
+    text-align: center;
+    margin: 20px 0;
+}
+#description a{
+    margin: 10px;
+}
+#sign-in-right, #sign-up-left{
+    background-image: linear-gradient(90deg, var(--color1), var(--color2));
+    background-position: center;
+    background-size: contain;
+    height: 80vh;
+    width: 35vw;
+    color: var(--color3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    gap: 30px;
+}
+#sign-in-form{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 20px;
+}
+#sign-in-form input:not(:last-child){
+    background-color: rgb(220, 220, 220);
+    border: none;
+    width: 300px;
+    height: 30px;
+    padding: 20px;
+}
+#forgot-password{
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    position: relative;
+    display: inline;
+    cursor: pointer;
+}
+#forgot-password span {
+    position: relative;
+    display: inline-block;
+}
+
+#forgot-password span::after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 0;
+    height: 2px; 
+    background-color: black; 
+    transition: width 1s ease-out;
+}
+#forgot-password span:hover::after {
+    width: 100%;
+}
+#submit-btn{
+    width: 150px;
+    height: 50px;
+    display: block;
+    margin: auto;
+    border-radius: 30px;
+    border: none;
+    background-color: var(--color1);
+    color: var(--color3);
+    cursor: pointer;
+}
+#sign-in-left, #sign-up-right{
+    height: 80vh;
+    width: 35vw;
+}
+#sign-in-right p, #sign-up-left p{
+    font-size: 15px;
+}
+#sign-in-right #sign-up-btn, #sign-up-left #sign-in-btn{
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 30px;
+    width: 150px;
+    height: 50px;
+    color: var(--color3);
+    cursor: pointer;
+}
