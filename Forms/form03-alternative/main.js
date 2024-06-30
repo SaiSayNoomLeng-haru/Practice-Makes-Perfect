@@ -18,9 +18,10 @@ $(document).ready(()=>{
         
         setTimeout(()=>{
             container1.addClass('hide');
-            container2.removeClass('hide');
+            
             left1.removeClass('animated-left');
             right1.removeClass('animated-right');
+            container2.removeClass('hide');
         },1000);
       
     });
@@ -31,9 +32,10 @@ $(document).ready(()=>{
 
         setTimeout(()=>{
             container2.addClass('hide');
-            container1.removeClass('hide');
+            
             left2.removeClass('animated-left');
             right2.removeClass('animated-right');
+            container1.removeClass('hide');
         },1000)
     });
 
