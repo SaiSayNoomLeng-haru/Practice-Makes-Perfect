@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form 03</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- font awesome -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+     <!-- end fontawesome -->
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+     <!-- end google font -->
+</head>
+<body>
+    <div id="main-container">
+        <!-- container 1 -->
+        <div id="container1">
+            <div id="left1">
+                <h1>Sign In</h1>
+
+            <!-- link container -->
+            <div id="link-container">
+                <a href="www.facebook.com" class="links"><i class="fa-brands fa-facebook"></i></a>
+                <a href="www.google.com" class="links"><i class="fa-brands fa-google-plus-g"></i></a>
+                <a href="www.instagram.com" class="links"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <!-- end link container -->
+
+            <p>or use your account</p>
+
+            <!-- sign in form -->
+            <form action="index.html" id="sign-in-form" method="post">
+                <input type="email" id="sign-in-email" placeholder="Email">
+                <input type="password" id="sign-in-password" placeholder="Password">
+                <p id="forgot">Forgot your password</p>
+                <input type="submit" id="sign-in-submit" value="SIGN IN">
+            </form>
+             <!-- end sign in form -->
+            </div>
+            
+            <div id="right1">
+                <!-- greet -->
+                <div id="greet1">
+                <h1>Hello!</h1>
+                <p>Enter your personal details and start journey with us</p>
+                <button id="sign-up-btn">Sign Up</button>
+            </div>
+            <!-- end greet -->
+            </div>
+           
+        </div>
+        <!-- container 1 end -->
+
+        <!-- container 2 -->
+        <div id="container2" >
+          <div id="left2">
+            <div id="greet2">
+                <h1>Welcome back</h1>
+                <p>To Keep connected with us please login with your personal info</p>
+                <button id="sign-in-btn">Sign In</button>
+               </div>
+          </div>
+
+          <div id="right2">
+            <h1>Create Account</h1>
+
+            <!-- link container -->
+            <div id="link-container">
+                <a href="www.facebook.com" class="links"><i class="fa-brands fa-facebook"></i></a>
+                <a href="www.google.com" class="links"><i class="fa-brands fa-google-plus-g"></i></a>
+                <a href="www.instagram.com" class="links"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <!-- end link container -->
+
+            <p>or use your email for registration</p>
+
+            <!-- sign in form -->
+            <form action="index.html" id="sign-up-form" method="post">
+                <input type="text" id="sign-up-username" placeholder="Name">
+                <input type="email" id="sign-up-email" placeholder="Email">
+                <input type="password" id="sign-up-password" placeholder="Password">
+                <input type="submit" id="sign-up-submit" value="SIGN IN">
+            </form>
+             <!-- end sign in form -->
+          </div>
+        </div>
+        <!-- container 2 end -->
+    </div>
+
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

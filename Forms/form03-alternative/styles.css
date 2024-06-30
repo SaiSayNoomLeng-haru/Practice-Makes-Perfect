@@ -1,0 +1,161 @@
+/* root and body */
+:root{
+    --font1 : "Noto Sans", sans-serif;
+    --font2 : "Raleway", sans-serif;
+    --color1 : #fe4553;
+    --color2 : #fe4978;
+    --color3 : #fff;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+/* main container */
+#main-container{
+    height: 80vh;
+    width: 80vw;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.hide{
+    display: none!important;
+}
+
+/* container 1 */
+#container1, #container2{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+/* left 1 */
+#left1, #right2{
+    width: 40vw;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    gap: 30px;
+    font-family: var(--font1);
+}
+#left1 h1{
+    font-size: 50px;
+    font-weight: 800;
+}
+.links{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: 3px solid gray;
+    border-radius: 50%;
+    padding: 20px;
+    position: relative;
+    margin: 0 15px;
+}
+.links i{
+    font-size: 20px;
+    color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#left1 p{
+    opacity: 0.6;
+}
+#sign-in-form, #sign-up-form{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 20px;
+}
+#sign-in-form input:not(:last-child), #sign-up-form input:not(:last-child){
+    width: 300px;
+    height: 50px;
+    background-color: rgb(212, 209, 209);
+    border: none;
+    padding-left: 30px;
+    outline: none;
+}
+#forgot{
+    text-align: center;
+    margin: 20px;
+    cursor: pointer;
+}
+#sign-in-submit, #sign-up-submit{
+    display: block;
+    width: 150px;
+    margin: auto;
+    height: 40px;
+    background-color: var(--color1);
+    border: none;
+    color: white;
+    font-weight: 800;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+/* right 1 */
+#greet1, #greet2{
+    background-image: linear-gradient(45deg, var(--color1), var(--color2));
+    height: 80vh;
+    width: 40vw;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 30px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font2);
+}
+#sign-up-btn, #sign-in-btn{
+    width: 150px;
+    height: 50px;
+    font-weight: 800;
+    border: 1px solid white;
+    background-color: transparent;
+    border-radius: 30px;
+    color: white;
+    cursor: pointer;
+}
+.animated-left {
+    animation: left-to-right 1s ease-in-out ;
+}
+
+.animated-right {
+    animation: right-to-left 1s ease-in-out ;
+}
+
+@keyframes left-to-right {
+    from {
+        transform: translateX(0);
+        
+
+    }
+    to {
+        transform: translateX(100%);
+
+    }
+}
+
+@keyframes right-to-left {
+    from {
+        transform: translateX(0%);
+
+    }
+    to {
+        transform: translateX(-100%);
+
+    }
+}
+
+
