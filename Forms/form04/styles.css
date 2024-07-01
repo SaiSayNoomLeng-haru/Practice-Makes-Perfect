@@ -1,0 +1,271 @@
+/* root */
+:root{
+    --font: "Poppins", sans-serif;
+    --color1: rgb(7, 73, 7);
+    --color3: rgba(7,73,7,0.2);
+    --color2: rgb(255,255,255);
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img/bg\ 1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-family: var(--font);
+    color: var(--color2);
+    overflow: hidden;
+}
+
+/* main container */
+#main-container{
+    max-width: 430px;
+    max-height: 932px;
+    width: 430px;
+    height: 932px;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* intro */
+#intro-header, #intro-choice{
+    width: 80%;
+    height: 200px;
+    margin: auto;
+    margin-top: 100px;
+}
+#intro-header h1{
+    font-size: 50px;
+}
+#intro-choice{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 20px;
+    margin-top: 200px;
+}
+#intro-choice .btn{
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+}
+
+
+
+/* sign in container */
+#sign-in-container{
+    max-width: 430px;
+    max-height: 932px;
+    width: 430px;
+    height: 932px;
+    margin: auto;
+    margin-top: 20px;
+    overflow: hidden;
+}
+.back-btn-container{
+    height: 150px;
+    background-color: transparent;
+}
+#back-btn{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: white;
+    margin: 10px 20px;
+    border: none;
+}
+#back-btn i{
+    color: var(--color1);
+}
+
+#sign-in-form{
+    max-height: 750px;
+    height: 750px;
+    margin-top: 10px;
+    border-top-left-radius: 100px;
+    background: white url('img/leaf.png') no-repeat 105% 15%;
+    background-size: 100px;
+}
+#sign-in-form-list, #sign-up-form-list{
+    color: var(--color1);
+    height: 90%;
+    position: relative;
+}
+.header{
+    text-align: center;
+    font-size: 20px;
+    padding: 20px 0;
+}
+.header p{
+    color: rgba(0, 0, 0, 0.5);
+}
+.input-wrapper{
+    width: 80%;
+    margin: auto;
+    margin-top: 100px;  
+}
+.input-box{
+    position: relative;
+}
+.input-box input{
+    width: 100%;
+    height: 50px;
+    margin: auto;
+    margin-bottom: 20px;
+    padding-left: 50px;
+    background-color: var(--color3);
+    border: none;
+    outline: none;
+    color: var(--color1);
+    font-size: 15px;
+    font-weight: 600;
+}
+.input-box input::placeholder{
+    color: var(--color1);
+    font-size: 15px;
+    font-weight: 600;
+}
+.input-box i{
+    position: absolute;
+    top: 25px;
+    left: 20px;
+    transform: translate(-50%, -50%);
+}
+.input-box i::after{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    right: -15px;
+    width: 2px;
+    height: 30px;
+    background-color: var(--color1);
+}
+.remember-forgot{
+    display: flex;
+    justify-content: space-between;
+}
+.remember-forgot label{
+    color: rgba(0, 0, 0, 0.5);
+}
+.remember-forgot input{
+    accent-color: var(--color1);
+}
+.remember-forgot a{
+    text-decoration: none;
+    color: var(--color1);
+    font-weight: 600;
+}
+.remember-forgot a span{
+    display: inline-block;
+    position: relative;
+}
+.remember-forgot a span::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0px;
+    height: 2px;
+    background-color: var(--color1);
+}
+.remember-forgot a span:hover::after{
+    width: 100%;
+    transition: 0.5s;
+}
+.log-in-link{
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    position: absolute;
+    bottom: 0;
+}
+.btn{
+    width: 100%;
+    height: 50px;
+    background-color: var(--color1);
+    color: white;
+    border: none;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 30px;
+}
+.log-in-link p{
+    color: rgba(0, 0, 0, 0.5);
+}
+.log-in-link p{
+    margin-top: 10px;
+}
+.log-in-link p a{
+    color: var(--color1);
+    font-weight: 600;
+}
+
+/* create form */
+#create-container{
+    max-width: 430px;
+    max-height: 932px;
+    width: 430px;
+    height: 932px;
+    margin: auto;
+    overflow: hidden;
+}
+#create-form{
+    height: 932px;
+    background: white url('img/leaf.png') no-repeat 105% 15%;
+    background-size: 100px;
+}
+.connect-links{
+    margin-top: 50px;
+    text-align: center;
+    color: black;
+}
+.connect-links p{
+    position: relative;
+}
+.connect-links p:before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100px;
+    height: 2px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.connect-links p:after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 100px;
+    height: 2px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.connect-links .links{
+    margin: 30px 0;
+    display: flex;
+    justify-content: space-around;
+}
+.connect-links .links a{
+    border: 1px solid gray;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: relative;
+}
+.connect-links .links a i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 20px;
+    color: var(--color1);
+}
