@@ -5,6 +5,7 @@
     --color-1: #5b42f8;
     --color-2: #fff3f3;
     --color-3: #e4d4d4;
+    --color-4: #c29d9d;
 }
 *{
     box-sizing: border-box;
@@ -188,6 +189,63 @@ nav{
 }
 /* end home */
 
+/* register menu container */
+#register-menu-container{
+    display: block;
+    height: 80%;
+    box-shadow: 5px 5px 10px black;
+}
+#register-menu{
+    background: url(img/register-menu-bg.jpg) no-repeat 50% 50%;
+    background-size: cover;
+    display: flex;
+    flex-flow: row nowrap;
+    height: 100%;
+}
+#register-menu-left{
+    background-color: rgba(0, 0, 0, 0.6);
+    flex: 1 1 40%;
+    padding: 30px;
+}
+#register-menu-right{
+    background-color: rgba(136, 92, 92, 0.6);
+    flex: 1 1 40%;
+    padding: 30px;
+}
+#sign-up-form{
+    color: white;
+    font-family: var(--body-font);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+#sign-up-form .input-boxes input{
+    width: 300px;
+    height: 30px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    border-bottom: 1px solid white;
+    font-weight: 600;
+    color: white;
+}
+#sign-up-form .input-boxes input::placeholder{
+    font-weight: 600;
+    color: white;
+}
+#sign-up-form .btn{
+    width: 300px;
+    border: none;
+    height: 30px;
+    color: white;
+    background-color: var(--color-4);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
 /* about */
 #about{
     display: flex;
@@ -333,3 +391,4 @@ nav{
 .contact-detail p{
     line-height: 20px;
 }
+/* end contact */
