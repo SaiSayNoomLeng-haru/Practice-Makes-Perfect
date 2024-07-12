@@ -4,8 +4,87 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page 03</title>
+    <!-- fontawesome -->
+     <link rel="stylesheet" href="styles.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- end fontawesome -->
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- end goole font -->
 </head>
 <body>
+    <!-- Component 1 -->
+    <div id="intro" class="main-container main-grid">
+        <!-- navbar -->
+        <div id="intro-navbar">
+            <div class="nav-logo">
+                <a href="#">INDOTRAVI</a>
+            </div>
+            <div class="nav-menu">
+                <ul>
+                    <li class="nav-items"><a href="#" class="nav-links">About</a></li>
+                    <li class="nav-items"><a href="#" class="nav-links">Location</a></li>
+                    <li class="nav-items"><a href="#" class="nav-links">Services</a></li>
+                    <li class="nav-items"><a href="#" class="nav-links">Destinations</a></li>
+                    <li class="nav-items"><a href="#" class="nav-links">Reviews</a></li>
+                    <li class="nav-items"><a href="#" class="nav-links">Blog</a></li>
+                    <li class="nav-items"><a href="#" class="nav-links">Contact</a></li>
+                </ul>
+            </div>
+            <div class="nav-login">
+                <div>
+                    <button type="button" class="night-btn"><i class="fa-solid fa-moon"></i></button>
+                    <button type="button" class="day-btn"><i class="fa-solid fa-sun"></i></button>
+                </div>
+                <button id="log-in-btn" type="button">Login</button>
+            </div>
+        </div>
+        <!-- end navbar -->
+        <!-- intro contnet -->
+        <div id="intro-content">
+            <h1>Extraordinary natural and cultural charm</h1>
+            <p>Exploring Indonesia is an unforgettable adventure.</p>
+            <form action="index.html" class="search-form">
+                <div class="input-boxes">
+                   <label><input type="date" id="search-date">Date</label>
+                </div>
+                <div class="input-boxes">
+                    <select name="budget" id="search-budget">
+                        <option value="" selected disabled>Budget</option>
+                        <option value="1">$1000-$2000</option>
+                        <option value="2">$2000-3000</option>
+                        <option value="3">$3000-4000</option>
+                    </select>
+                </div>
+                <div class="input-boxes">
+                    <select name="guest" id="search-guest">
+                        <option value="" selected disabled>Guest</option>
+                        <option value="1">1-2 persons</option>
+                        <option value="2">1-5 persons</option>
+                        <option value="3">5-10 persons</option>
+                    </select>
+                </div>
+                <div class="input-boxes">
+                    <input type="submit" value="Submit" id="search-submit">
+                </div>
+            </form>
+        </div>
+        <!-- end intro content -->
+
+        <div id="intro-footer">
+            
+        </div>
+    </div>
+    <!-- end Component 1 -->
     
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
