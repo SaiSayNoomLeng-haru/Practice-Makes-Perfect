@@ -1,0 +1,76 @@
+/* Variable and declaration */
+:root{
+    --font : "Hind Siliguri", sans-serif;
+    --color1 : #FFC1DC;
+    --color2 : #AB9796;
+    --color3 : #FCF0E4;
+    --color-white : #fff;
+    --color-gray : #666;
+    --color-black : #000;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100vw;
+    height: 100vh; 
+    background-color: var(--color3);
+    user-select: none;
+    max-width: 400px;
+}
+
+/* main element */
+.main-container{
+    display: flex;
+    flex-direction: column;
+    
+    margin: 30px auto;
+}
+.main-container img{
+    width: 200px;
+    margin: 0 auto;
+}
+.main-container input, .main-container button{
+    font-family: var(--font);
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    width: 50%;
+    margin: auto;
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 15px;
+}
+.main-container input{
+    background-color: var(--color-white);
+}
+.main-container button{
+    background-color: var(--color1);
+}
+
+.list-container{
+    margin: auto;
+    margin-top: 10px;
+    max-width: 50%;
+}
+#lists{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+#lists > li{
+    background-color: var(--color-white);
+    padding: 10px;
+    border-radius: 10px;
+    flex: 1;
+    text-align: center;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    font-family: var(--font);
+    font-size: 15px;
+}
+#lists > li:hover{
+    background-color: var(--color2);
+}
